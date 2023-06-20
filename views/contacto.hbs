@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div id="conocenos" class="row py-2">
+        <div class="col-md-2 offset-md-2">
+            <h2>CONTACTANOS</h2>
+            <form action="/contacto" method="post">
+                <div class="col">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div class="col">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+
+                <div class="col">
+                    <label for="adoptar" class="form-label">Interes</label>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" name="adop">
+                            <option selected></option>
+                            <option value="Adoptar">Adoptar</option>
+                            <option value="Donaciones">Donaciones</option>
+                            <option value="Voluntariado">Voluntariado</option>
+                        </select>
+                        <label for="floatingSelectGrid"></label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="mensaje" class="from-label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="4"></textarea>
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1 offset-md-2">
+            <h2>VISITANOS</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52683.09723565202!2d-58.77819138933548!3d-34.38371301221233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca0120bcffc39%3A0x982b3260bdefe8cd!2sIngeniero%20Maschwitz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1680143784885!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

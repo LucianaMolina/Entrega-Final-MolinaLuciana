@@ -1,0 +1,14 @@
+<div id="Adoptar" class="row row-cols-1 row-cols-md-3 adop g-4">
+    {{#each novedades}}
+    <div class="col">
+        <div class="card">
+
+            <div class="card-body">
+                <img src="{{imagen}}" alt="img" class="card-img-top">
+                <h5 class="card-title">{{nombre}}</h5>
+                <p class="card-text">{{edad}} años,{{raza}},de tamaño {{tamano}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

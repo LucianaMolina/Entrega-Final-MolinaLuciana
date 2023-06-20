@@ -1,0 +1,39 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>agregar una nueva novedad</h4>
+            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" placeholder="especie" value="{{novedad.especie}}" class="form-control"
+                        name="especie">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="nombre" value="{{novedad.nombre}}" class="form-control"
+                        name="nombre">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="edad" value="{{novedad.edad}}" class="form-control" name="edad">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="raza" value="{{novedad.raza}}" class="form-control" name="raza">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="estado" value="{{novedad.esatdo}}" class="form-control"
+                        name="estado">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="tamano" value="{{novedad.tamano}}" class="form-control"
+                        name="tamano">
+                </div>
+                <div class="form-group">
+                    <label>imagen: <input type="file" name="imagen" id="imagen" value="{{novedad.imagen}}" /></label>
+                </div>
+                <button type="submit" class="btn btn-primary">agregar</button>
+            </form>
+        </div>
+        {{#if error}}
+        <h5>{{message}}</h5>
+        {{/if}}
+    </div>
+</div>
